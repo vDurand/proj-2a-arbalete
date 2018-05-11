@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.debutPartie.MultiConfigViewController">
+    <children>
+      <ImageView fx:id="imgWood" fitHeight="500.0" fitWidth="410.0" layoutX="153.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WoodPanel.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="186.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="41.0" prefWidth="46.0" stylesheets="@btnBackStyle.css" />
+      <Button fx:id="btnValider" layoutX="300.0" layoutY="309.0" mnemonicParsing="false" onMouseClicked="#startMultiGame" prefHeight="57.0" prefWidth="112.0" stylesheets="@btnSmallStyle.css" text="Valider" />
+      <Text fx:id="textTop" fill="#68391d" layoutX="255.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pseudoInput" layoutX="232.0" layoutY="144.0" prefHeight="27.0" prefWidth="250.0" />
+      <TextField fx:id="roundInput" layoutX="232.0" layoutY="144.0" prefHeight="27.0" prefWidth="250.0" text="2" />
+      <Slider fx:id="targetSlider" blockIncrement="1.0" layoutX="232.0" layoutY="200.0" majorTickUnit="1.0" max="2.0" minorTickCount="0" prefHeight="26.0" prefWidth="250.0" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Slider fx:id="windSlider" blockIncrement="1.0" layoutX="232.0" layoutY="268.0" majorTickUnit="1.0" max="3.0" minorTickCount="0" prefHeight="26.0" prefWidth="250.0" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Text fx:id="target0" fill="#727272" layoutX="232.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="proche" />
+      <Text fx:id="target1" fill="#727272" layoutX="333.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="moyen" />
+      <Text fx:id="target2" fill="#727272" layoutX="450.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="éloigné" />
+      <Text fx:id="nbRoundLabel" layoutX="218.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de volée">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="pseudoLabel" layoutX="218.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pseudo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="gameNameInput" layoutX="232.0" layoutY="144.0" prefHeight="27.0" prefWidth="250.0" />
+      <Text fx:id="gameNameLabel" layoutX="218.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la partie">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="targetLabel" layoutX="209.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distance de la cible">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="windLabel" layoutX="209.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Force du vent">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="wind0" fill="#727272" layoutX="218.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nul" />
+      <Text fx:id="wind1" fill="#727272" layoutX="291.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="faible" />
+      <Text fx:id="wind2" fill="#727272" layoutX="375.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="moyen" />
+      <Text fx:id="wind3" fill="#727272" layoutX="461.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fort" />
+   </children>
+</AnchorPane>

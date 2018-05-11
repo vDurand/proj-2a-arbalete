@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.debutPartie.MultiJoinViewController">
+    <children>
+      <ImageView fx:id="imgWood" fitHeight="500.0" fitWidth="410.0" layoutX="153.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WoodPanel.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="188.0" layoutY="448.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="41.0" prefWidth="46.0" stylesheets="@btnBackStyle.css" />
+      <Button fx:id="btnValider" layoutX="400.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#joinMultiGame" prefHeight="57.0" prefWidth="112.0" stylesheets="@btnSmallStyle.css" text="Valider" />
+      <Text fx:id="textTop" fill="#68391d" layoutX="255.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parties en cours" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TableView fx:id="gameTable" focusTraversable="false" layoutX="219.0" layoutY="94.0" onMouseClicked="#selectPartie" pickOnBounds="false" prefHeight="347.0" prefWidth="270.0">
+        <columns>
+          <TableColumn fx:id="columnName" editable="false" prefWidth="205.0" resizable="false" sortable="false" text="Parties" />
+          <TableColumn fx:id="columnPlayers" editable="false" prefWidth="64.0" resizable="false" sortable="false" text="Joueurs" />
+        </columns>
+      </TableView>
+      <Text fx:id="pseudoLabel" layoutX="218.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pseudo">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pseudoInput" layoutX="232.0" layoutY="144.0" prefHeight="27.0" prefWidth="250.0" />
+      <Text fx:id="textAlertPseudo" fill="#DF013A" layoutX="255.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pseudo non disponible" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnRefresh" layoutX="466.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#goRefresh" prefHeight="41.0" prefWidth="46.0" stylesheets="@btnRefreshStyle.css" />
+      <Button fx:id="btnJoin" layoutX="400.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#startMultiGame" prefHeight="57.0" prefWidth="112.0" stylesheets="@btnSmallStyle.css" text="Valider" />
+   </children>
+</AnchorPane>

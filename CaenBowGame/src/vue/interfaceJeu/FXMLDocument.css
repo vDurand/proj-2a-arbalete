@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+#terrain {
+    -fx-background-image: url("../img/paysage.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+
+#BackgroundCote {
+    -fx-background-image: url("../img/WoodPanel.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+
+
+#BackgroundInfo {
+    -fx-background-image: url("../img/fondTabRecap.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+
+
+#cibleJoueur {
+    -fx-margin : 45%;
+}
+
+

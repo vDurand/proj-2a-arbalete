@@ -1,0 +1,62 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*
+ * Empty Stylesheet file.
+ */
+
+    #AnchorPane{
+       -fx-background-image: url("../img/forest.jpg");;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #fff;
+    }
+
+    #pane {
+     -fx-background-image: url("../img/fondTabRecap.png");;
+    -fx-background-size: 95%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-color: #C9965C;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20px; /* 12 */
+    -fx-text-fill: #68391d;
+    }
+    
+    .table-view{
+      -fx-border-color: transparent;
+      -fx-background-color: #EBC9A6;
+      -fx-table-header-border-color: #EBC9A6;
+      -fx-table-cell-color:#C9965C;
+      -fx-base: #C9965C;
+    }  
+    
+    .table-row-cell:empty {
+    -fx-opacity: 1;
+    -fx-background-color: #EBC9A6;
+    }
+    
+   .table-row-cell:empty .table-cell {
+       
+    -fx-border-width: 0px;
+}
+
+
+#label{
+    -fx-background-color: #EBC9A6;
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #fff;
+}

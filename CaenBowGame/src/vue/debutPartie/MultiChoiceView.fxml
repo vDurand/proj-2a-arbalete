@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.debutPartie.MultiChoiceViewController">
+    <children>
+      <Button id="createBTN" fx:id="createBTN" mnemonicParsing="false" onMouseClicked="#createMultiGame" prefHeight="59.0" prefWidth="206.0" stylesheets="@toggleBtn2Style.css" text="Creer" textFill="WHITE">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Button>
+      <Button id="joinBTN" fx:id="joinBTN" layoutX="255.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#joinMultiGame" prefHeight="59.0" prefWidth="206.0" stylesheets="@toggleBtnStyle.css" text="Rejoindre" textFill="WHITE">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="caenBowLogo" fitHeight="201.0" fitWidth="234.0" layoutX="280.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoarchery.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="186.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="48.0" prefWidth="117.0" stylesheets="@btnSmallWhiteStyle.css" text="Retour" />
+   </children>
+</AnchorPane>
